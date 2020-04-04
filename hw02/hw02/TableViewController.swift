@@ -9,41 +9,53 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-    var editingStyle = 0
-    
+    var currentEditingMode = 1
+    var addLock = false
+    var delLock = false
     var restaurants:[Restaurant] = [
     Restaurant(name: "Seven-Eleven", image: "711_icon"),
     Restaurant(name: "Family-Mart", image: "familymart_icon"),
     Restaurant(name: "Hi-Life", image: "hilife_icon"),
     ]
     
+   
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var delButton: UIButton!
+    @IBOutlet var myTableView: UITableView!
     
 
-//    @IBAction func add(_ sender: UIButton) {
-//        if(tableView.isEditing){
-//            tableView.isEditing = false
-//            addButton.setTitle("新增", for: .normal)
-//            editingStyle = 1
-//        } else{
-//            tableView.isEditing = true
-//            addButton.setTitle("返回", for: .normal)
-//            editingStyle = 0
-//        }
-//    }
-//
-//    @IBAction func del(_ sender: UIButton) {
-//        if(tableView.isEditing){
-//            tableView.isEditing = false
-//            delButton.setTitle("刪除", for: .normal)
-//            editingStyle = 2
-//        } else{
-//            tableView.isEditing = true
-//            delButton.setTitle("返回", for: .normal)
-//            editingStyle = 0
-//        }
-//    }
+    @IBAction func add(_ sender: UIButton) {
+        if(delLock == false && !tableView.isEditing){
+               //tableView.isEditing = false
+               addButton.setTitle("返回", for: .normal)
+               currentEditingMode = 1
+               addLock = true
+               tableView.setEditing(true, animated: true)
+               
+           } else if(addLock == true && tableView.isEditing){
+               //tableView.isEditing = true
+               addLock = false
+               addButton.setTitle("新增", for: .normal)
+               tableView.setEditing(false, animated: true)
+           }
+        
+       
+    }
+
+    @IBAction func del(_ sender: UIButton) {
+        if(addLock == false && !tableView.isEditing){
+            delButton.setTitle("返回", for: .normal)
+            currentEditingMode = 2
+            delLock = true
+            tableView.setEditing(true, animated: true)
+        } else if(delLock == true && tableView.isEditing){
+            //tableView.isEditing = true
+            delLock = false
+            delButton.setTitle("刪除", for: .normal)
+            tableView.setEditing(false, animated: true)
+        }
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,34 +66,74 @@ class TableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         //self.navigationItem.rightBarButtonItem = self.editButtonItem
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "刪除", style: UIBarButtonItem.Style.plain, target: navigationController, action: #selector(setEditing(_:animated:)))
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "新增", style: UIBarButtonItem.Style.plain, target: navigationController, action: #selector(setEditing(_:animated:)))
+        //navigationItem.rightBarButtonItem = UIBarButtonItem(title: "刪除", style: UIBarButtonItem.Style.plain, target: navigationController, action: #selector(setEditing(_:animated:)))
+        //navigationItem.leftBarButtonItem = UIBarButtonItem(title: "新增", style: UIBarButtonItem.Style.plain, target: navigationController, action: #selector(setEditing(_:animated:)))
+        
+        //myTableView.setEditing(true, animated: false)
+        //self.delBtnAction()
+        //myTableView.isEditing = true
+        //self.addBtnAction()
+        
+        
+        
     }
     
-    override func setEditing(_ editing: Bool, animated: Bool) {
-        // Toggles the edit button state
-        super.setEditing(editing, animated: animated)
-        // Toggles the actual editing actions appearing on a table view
-        tableView.setEditing(editing, animated: true)
+//    // 按下編輯按鈕時執行動作的方法
+//    @objc func delBtnAction() -> UITableViewCell.EditingStyle {
+//        myTableView.setEditing(!myTableView.isEditing, animated: true)
+//        if (!myTableView.isEditing) {
+//            // 顯示編輯按鈕
+//            self.navigationItem.rightBarButtonItem =
+//                UIBarButtonItem(title: "刪除", style: .plain,
+//              target: self,
+//              action:
+//                #selector(self.delBtnAction))
+//        } else {
+//            // 顯示編輯完成按鈕
+//            self.navigationItem.rightBarButtonItem =
+//                UIBarButtonItem(title: "返回", style: .done,
+//                target: self,
+//                action:
+//                  #selector(self.delBtnAction))
+//        }
+//        return .delete
+//    }
+//    @objc func addBtnAction() -> UITableViewCell.EditingStyle{
+//        myTableView.setEditing(!myTableView.isEditing, animated: true)
+//        if (!myTableView.isEditing) {
+//            // 顯示新增按鈕
+//            self.navigationItem.leftBarButtonItem =
+//                UIBarButtonItem(title: "新增", style: .plain,
+//              target: self,
+//              action:
+//                #selector(self.addBtnAction))
+//        } else {
+//
+//            // 隱藏新增按鈕
+//            self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "返回", style: .done, target: self, action: #selector(self.addBtnAction))
+//        }
+//        return .insert
+//    }
+    
+//    override func setEditing(_ editing: Bool, animated: Bool) {
+//        // Toggles the edit button state
+//        super.setEditing(editing, animated: animated)
+//        // Toggles the actual editing actions appearing on a table view
+//        tableView.setEditing(editing, animated: true)
+//
+//        if (self.isEditing) {
+//            navigationItem.rightBarButtonItem =
+//                UIBarButtonItem(barButtonSystemItem: .add, target: self,
+//                                action: #selector(clickMe))
+//
+//        } else {
+//            // we're not in edit mode
+//            let newButton = UIBarButtonItem(title: "hhh", style: UIBarButtonItem.Style.plain, target: navigationController, action: nil)
+//            navigationItem.rightBarButtonItem = newButton
+//        }
+//
+//    }
 
-        if (self.isEditing) {
-            navigationItem.rightBarButtonItem =
-                UIBarButtonItem(barButtonSystemItem: .add, target: self,
-                                action: #selector(clickMe))
-
-        } else {
-            // we're not in edit mode
-            let newButton = UIBarButtonItem(title: "hhh", style: UIBarButtonItem.Style.plain, target: navigationController, action: nil)
-            navigationItem.rightBarButtonItem = newButton
-        }
-
-    }
-
-
-    @objc func clickMe()
-    {
-        print("Button Clicked")
-    }
 
     // MARK: - Table view data source
 
@@ -114,13 +166,12 @@ class TableViewController: UITableViewController {
           }
       }
 
-    /*
+
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
 
     
     // Override to support editing the table view.
@@ -135,9 +186,18 @@ class TableViewController: UITableViewController {
         }
         tableView.reloadData()
     }
-    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle{
-        return .delete
-        
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt: IndexPath) -> UITableViewCell.EditingStyle{
+        switch currentEditingMode {
+        case 0:
+            return .none
+        case 1:
+            return .insert
+        case 2:
+            return .delete
+        default:
+            break
+        }
+        return .none
     }
 
     /*

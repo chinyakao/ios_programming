@@ -42,7 +42,33 @@
                             <outlet property="delegate" destination="yLU-Xx-NmW" id="wLN-kL-X3v"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="我的餐廳" id="jm2-zI-Ui9"/>
+                    <navigationItem key="navigationItem" title="我的餐廳" id="jm2-zI-Ui9">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="CQZ-pF-6zK">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xdu-LU-djI">
+                                <rect key="frame" x="20" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="新增"/>
+                                <connections>
+                                    <action selector="add:" destination="yLU-Xx-NmW" eventType="touchUpInside" id="iBq-rK-fdi"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="1v0-hr-3hd">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rwi-wZ-Xnp">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="刪除"/>
+                                <connections>
+                                    <action selector="del:" destination="yLU-Xx-NmW" eventType="touchUpInside" id="30Z-nK-0Hz"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="Xdu-LU-djI" id="OkI-x2-N3t"/>
+                        <outlet property="delButton" destination="Rwi-wZ-Xnp" id="dX1-LE-dEX"/>
+                        <outlet property="myTableView" destination="E3q-Jo-Twk" id="po2-2g-k9D"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C8y-bw-mj4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
