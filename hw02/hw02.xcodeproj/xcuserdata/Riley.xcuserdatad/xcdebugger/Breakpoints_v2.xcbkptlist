@@ -14,10 +14,10 @@
             filePath = "hw02/TableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
-            landmarkName = "TableViewController"
-            landmarkType = "3">
+            startingLineNumber = "188"
+            endingLineNumber = "188"
+            landmarkName = "tableView(_:commit:forRowAt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

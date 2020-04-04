@@ -16,6 +16,7 @@ class TableViewController: UITableViewController {
     Restaurant(name: "Seven-Eleven", image: "711_icon"),
     Restaurant(name: "Family-Mart", image: "familymart_icon"),
     Restaurant(name: "Hi-Life", image: "hilife_icon"),
+    Restaurant(name: "帝一味自助餐", image: "帝一味自助餐"), Restaurant(name: "雞同鴨講", image: "雞同鴨講"), Restaurant(name: "品客自助餐", image: "品客自助餐"), Restaurant(name: "福客亭早餐吧", image: "福客亭早餐吧"), Restaurant(name: "丼太郎", image: "丼太郎"), Restaurant(name: "宏福鐵板牛排", image: "宏福鐵板牛排"), Restaurant(name: "上品排骨", image: "上品排骨"), Restaurant(name: "嚴茶", image: "嚴茶"), Restaurant(name: "阿水茶舖", image: "阿水茶舖"), Restaurant(name: "謙恆食堂", image: "謙恆食堂"), Restaurant(name: "藝素佳", image: "藝素佳"), Restaurant(name: "天津蔥抓餅", image: "天津蔥抓餅"), Restaurant(name: "高麗元", image: "高麗元"), Restaurant(name: "溫州大餛鈍", image: "溫州大餛鈍"), Restaurant(name: "八方雲集", image: "八方雲集"), Restaurant(name: "昌盛西點麵包坊", image: "昌盛西點麵包坊"), Restaurant(name: "炸多多", image: "炸多多"), Restaurant(name: "賽門鄧普拉", image: "賽門鄧普拉"),
     ]
     
    
