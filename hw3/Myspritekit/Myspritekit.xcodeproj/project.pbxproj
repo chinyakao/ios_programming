@@ -22,8 +22,8 @@
 		DB8D8DCA24346FEA0001EBC2 /* spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8D8DC524346FEA0001EBC2 /* spaceship.png */; };
 		DB8D8DCC243470380001EBC2 /* HelloScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8D8DCB243470380001EBC2 /* HelloScene.swift */; };
 		DB8D8DCE243475600001EBC2 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8D8DCD243475600001EBC2 /* MainScene.swift */; };
+		DBB25DEC2452C4520054C755 /* gameoverbgd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBB25DEB2452C4520054C755 /* gameoverbgd.jpg */; };
 		DBBB9043245152D80078A85D /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBB9042245152D80078A85D /* GameOverScene.swift */; };
-		DBBB9045245153990078A85D /* gameoverbgd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBBB9044245153990078A85D /* gameoverbgd.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +44,8 @@
 		DB8D8DC524346FEA0001EBC2 /* spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaceship.png; sourceTree = "<group>"; };
 		DB8D8DCB243470380001EBC2 /* HelloScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloScene.swift; sourceTree = "<group>"; };
 		DB8D8DCD243475600001EBC2 /* MainScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
+		DBB25DEB2452C4520054C755 /* gameoverbgd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gameoverbgd.jpg; path = ../../../../gameoverbgd.jpg; sourceTree = "<group>"; };
 		DBBB9042245152D80078A85D /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
-		DBBB9044245153990078A85D /* gameoverbgd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gameoverbgd.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 				DB8D8DAF24346FD00001EBC2 /* GameScene.swift */,
 				DB8D8DC124346FEA0001EBC2 /* coin.png */,
 				DB8D8DC224346FEA0001EBC2 /* hellobgd.jpg */,
-				DBBB9044245153990078A85D /* gameoverbgd.jpg */,
+				DBB25DEB2452C4520054C755 /* gameoverbgd.jpg */,
 				DB8D8DC324346FEA0001EBC2 /* mainbgd.png */,
 				DB8D8DC424346FEA0001EBC2 /* rock.png */,
 				DB8D8DC524346FEA0001EBC2 /* spaceship.png */,
@@ -159,12 +159,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB8D8DC824346FEA0001EBC2 /* mainbgd.png in Resources */,
+				DBB25DEC2452C4520054C755 /* gameoverbgd.jpg in Resources */,
 				DB8D8DB524346FD00001EBC2 /* Main.storyboard in Resources */,
 				DB8D8DCA24346FEA0001EBC2 /* spaceship.png in Resources */,
 				DB8D8DC924346FEA0001EBC2 /* rock.png in Resources */,
 				DB8D8DAC24346FD00001EBC2 /* GameScene.sks in Resources */,
 				DB8D8DC624346FEA0001EBC2 /* coin.png in Resources */,
-				DBBB9045245153990078A85D /* gameoverbgd.jpg in Resources */,
 				DB8D8DB724346FD00001EBC2 /* Assets.xcassets in Resources */,
 				DB8D8DBA24346FD00001EBC2 /* LaunchScreen.storyboard in Resources */,
 				DB8D8DAE24346FD00001EBC2 /* Actions.sks in Resources */,

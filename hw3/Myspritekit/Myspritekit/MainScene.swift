@@ -115,10 +115,9 @@ class MainScene: SKScene, SKPhysicsContactDelegate {
             secondBody = contact.bodyA
         }
         if(firstBody.node?.name == "ships" && secondBody.node?.name == "rocks"){
-//            let mainScene = MainScene(size: self.size)
             let gameoverScene = GameOverScene(size: self.size)
             gameoverScene.finalScore = score
-            let doors = SKTransition.doorsOpenHorizontal(withDuration: 0.5)
+            let doors = SKTransition.fade(with: SKColor.black, duration: 0.5)
             self.view?.presentScene(gameoverScene, transition: doors)
 
         }else if(firstBody.node?.name == "ships" && secondBody.node?.name == "coins"){
