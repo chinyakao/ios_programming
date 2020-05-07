@@ -13,8 +13,6 @@
 		DBCB7AB82462992F00ACC0D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCB7AB62462992F00ACC0D7 /* Main.storyboard */; };
 		DBCB7ABA2462992F00ACC0D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCB7AB92462992F00ACC0D7 /* Assets.xcassets */; };
 		DBCB7ABD2462992F00ACC0D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCB7ABB2462992F00ACC0D7 /* LaunchScreen.storyboard */; };
-		DBCB7AC524629A9A00ACC0D7 /* how have you been.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBCB7AC424629A9A00ACC0D7 /* how have you been.mp3 */; };
-		DBCB7AC724629B0D00ACC0D7 /* Whistle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBCB7AC624629B0D00ACC0D7 /* Whistle.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +24,6 @@
 		DBCB7AB92462992F00ACC0D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBCB7ABC2462992F00ACC0D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBCB7ABE2462992F00ACC0D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBCB7AC424629A9A00ACC0D7 /* how have you been.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "how have you been.mp3"; sourceTree = "<group>"; };
-		DBCB7AC624629B0D00ACC0D7 /* Whistle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Whistle.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +59,6 @@
 				DBCB7AB02462992F00ACC0D7 /* AppDelegate.swift */,
 				DBCB7AB22462992F00ACC0D7 /* SceneDelegate.swift */,
 				DBCB7AB42462992F00ACC0D7 /* ViewController.swift */,
-				DBCB7AC424629A9A00ACC0D7 /* how have you been.mp3 */,
-				DBCB7AC624629B0D00ACC0D7 /* Whistle.mp3 */,
 				DBCB7AB62462992F00ACC0D7 /* Main.storyboard */,
 				DBCB7AB92462992F00ACC0D7 /* Assets.xcassets */,
 				DBCB7ABB2462992F00ACC0D7 /* LaunchScreen.storyboard */,
@@ -131,8 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBCB7AC524629A9A00ACC0D7 /* how have you been.mp3 in Resources */,
-				DBCB7AC724629B0D00ACC0D7 /* Whistle.mp3 in Resources */,
 				DBCB7ABD2462992F00ACC0D7 /* LaunchScreen.storyboard in Resources */,
 				DBCB7ABA2462992F00ACC0D7 /* Assets.xcassets in Resources */,
 				DBCB7AB82462992F00ACC0D7 /* Main.storyboard in Resources */,
