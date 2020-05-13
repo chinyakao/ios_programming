@@ -16,6 +16,9 @@
 		DBC813A82463D0B900E37814 /* CaptainMarvel.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DBC813A52463D0B900E37814 /* CaptainMarvel.mp4 */; };
 		DBC813A92463D0B900E37814 /* Wreck-ItRalph.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DBC813A62463D0B900E37814 /* Wreck-ItRalph.mp4 */; };
 		DBC813AA2463D0B900E37814 /* TheFastAndTheFurious.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DBC813A72463D0B900E37814 /* TheFastAndTheFurious.mp4 */; };
+		DBD4F13B246BB9DB00F6DC34 /* 布拉姆回來了.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DBD4F138246BB9DA00F6DC34 /* 布拉姆回來了.mp4 */; };
+		DBD4F13C246BB9DB00F6DC34 /* 絕命直播.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DBD4F139246BB9DA00F6DC34 /* 絕命直播.mp4 */; };
+		DBD4F13D246BB9DB00F6DC34 /* 大監獄行動.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DBD4F13A246BB9DB00F6DC34 /* 大監獄行動.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		DBC813A52463D0B900E37814 /* CaptainMarvel.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaptainMarvel.mp4; sourceTree = "<group>"; };
 		DBC813A62463D0B900E37814 /* Wreck-ItRalph.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wreck-ItRalph.mp4"; sourceTree = "<group>"; };
 		DBC813A72463D0B900E37814 /* TheFastAndTheFurious.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheFastAndTheFurious.mp4; sourceTree = "<group>"; };
+		DBD4F138246BB9DA00F6DC34 /* 布拉姆回來了.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "布拉姆回來了.mp4"; sourceTree = "<group>"; };
+		DBD4F139246BB9DA00F6DC34 /* 絕命直播.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "絕命直播.mp4"; sourceTree = "<group>"; };
+		DBD4F13A246BB9DB00F6DC34 /* 大監獄行動.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "大監獄行動.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				DBC813932463CF2A00E37814 /* SceneDelegate.swift */,
 				DBC813952463CF2A00E37814 /* ViewController.swift */,
 				DBC813A52463D0B900E37814 /* CaptainMarvel.mp4 */,
+				DBD4F13A246BB9DB00F6DC34 /* 大監獄行動.mp4 */,
+				DBD4F138246BB9DA00F6DC34 /* 布拉姆回來了.mp4 */,
+				DBD4F139246BB9DA00F6DC34 /* 絕命直播.mp4 */,
 				DBC813A72463D0B900E37814 /* TheFastAndTheFurious.mp4 */,
 				DBC813A62463D0B900E37814 /* Wreck-ItRalph.mp4 */,
 				DBC813972463CF2A00E37814 /* Main.storyboard */,
@@ -134,7 +143,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD4F13D246BB9DB00F6DC34 /* 大監獄行動.mp4 in Resources */,
 				DBC8139E2463CF2A00E37814 /* LaunchScreen.storyboard in Resources */,
+				DBD4F13B246BB9DB00F6DC34 /* 布拉姆回來了.mp4 in Resources */,
+				DBD4F13C246BB9DB00F6DC34 /* 絕命直播.mp4 in Resources */,
 				DBC8139B2463CF2A00E37814 /* Assets.xcassets in Resources */,
 				DBC813A92463D0B900E37814 /* Wreck-ItRalph.mp4 in Resources */,
 				DBC813AA2463D0B900E37814 /* TheFastAndTheFurious.mp4 in Resources */,
