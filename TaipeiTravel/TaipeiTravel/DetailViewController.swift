@@ -1,11 +1,3 @@
-//
-//  DetailViewController.swift
-//  TaipeiTravel
-//
-//  Created by mac25 on 2020/5/20.
-//  Copyright © 2020 hsin. All rights reserved.
-//
-
 import UIKit
 
 class DetailViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {

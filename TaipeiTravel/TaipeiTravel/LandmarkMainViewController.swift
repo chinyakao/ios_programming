@@ -1,11 +1,3 @@
-//
-//  LandmarkMainViewController.swift
-//  TaipeiTravel
-//
-//  Created by mac25 on 2020/5/20.
-//  Copyright © 2020 hsin. All rights reserved.
-//
-
 import UIKit
 import CoreLocation
 
@@ -18,7 +10,9 @@ class LandmarkMainViewController: BaseMainViewController {
         
         self.fetchType = "landmark"
         
-        self.targeUrl = {
+        self.strTargetID = "36847f3f-deff-4183-a5bb-800737591de5"
+        
+        self.targetUrl = {
             do{
                 return try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appendingPathComponent(self.fetchType + ".json")
             }catch{

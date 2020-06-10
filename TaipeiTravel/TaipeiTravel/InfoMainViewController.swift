@@ -1,11 +1,3 @@
-//
-//  InfoMainViewController.swift
-//  TaipeiTravel
-//
-//  Created by mac25 on 2020/5/20.
-//  Copyright © 2020 hsin. All rights reserved.
-//
-
 import UIKit
 
 class InfoMainViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
@@ -29,16 +21,16 @@ class InfoMainViewController: UIViewController,UITableViewDelegate, UITableViewD
         self.view.addSubview(self.myTableView)
     }
     @objc func goFB(){
-        let reqestURL = URL(string: "https://www.facebook.com/swiftgogogo")
-        UIApplication.shared.open(reqestURL!)
+        let requestURL = URL(string: "https://www.facebook.com/swiftgogogo")
+        UIApplication.shared.open(requestURL!)
     }
     @objc func goIconSource(){
-        let reqestURL = URL(string: "https://www.flaticon.com/")
-        UIApplication.shared.open(reqestURL!)
+        let requestURL = URL(string: "https://www.flaticon.com/")
+        UIApplication.shared.open(requestURL!)
     }
     @objc func goDataSource(){
-        let reqestURL = URL(string: "https://data.taipei/")
-        UIApplication.shared.open(reqestURL!)
+        let requestURL = URL(string: "https://data.taipei/")
+        UIApplication.shared.open(requestURL!)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -52,7 +44,7 @@ class InfoMainViewController: UIViewController,UITableViewDelegate, UITableViewD
             if indexPath.row == 0 {
                 let fbButton = UIButton(frame: CGRect(x: 15, y: 0, width: fullSize.width, height: 40))
                 fbButton.addTarget(self, action: #selector(InfoMainViewController.goFB), for: .touchUpInside)
-                fbButton.setTitle("在FB上與我們聯絡", for: .normal)
+                fbButton.setTitle("在 FB 上與我們聯絡", for: .normal)
                 fbButton.setTitleColor(UIColor.black, for: .normal)
                 fbButton.contentHorizontalAlignment = .left
                 cell.contentView.addSubview(fbButton)
@@ -60,14 +52,14 @@ class InfoMainViewController: UIViewController,UITableViewDelegate, UITableViewD
         }else if indexPath.section == 1 {
             if indexPath.row == 0 {
                 let button = UIButton(frame: CGRect(x: 15, y: 0, width: fullSize.width, height: 40))
-                button.addTarget(self, action: #selector(InfoMainViewController.goFB), for: .touchUpInside)
+                button.addTarget(self, action: #selector(InfoMainViewController.goDataSource), for: .touchUpInside)
                 button.setTitle("資料：台北市政府資料開放平臺", for: .normal)
                 button.setTitleColor(UIColor.black, for: .normal)
                 button.contentHorizontalAlignment = .left
                 cell.contentView.addSubview(button)
             }else{
                 let button = UIButton(frame: CGRect(x: 15, y: 0, width: fullSize.width, height: 40))
-                button.addTarget(self, action: #selector(InfoMainViewController.goFB), for: .touchUpInside)
+                button.addTarget(self, action: #selector(InfoMainViewController.goIconSource), for: .touchUpInside)
                 button.setTitle("圖示：FLATION", for: .normal)
                 button.setTitleColor(UIColor.black, for: .normal)
                 button.contentHorizontalAlignment = .left

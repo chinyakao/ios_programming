@@ -1,11 +1,3 @@
-//
-//  HotelMainViewController.swift
-//  TaipeiTravel
-//
-//  Created by mac25 on 2020/5/20.
-//  Copyright © 2020 hsin. All rights reserved.
-//
-
 import UIKit
 
 class HotelMainViewController: BaseMainViewController {
@@ -17,9 +9,9 @@ class HotelMainViewController: BaseMainViewController {
         
         self.fetchType = "hotel"
         
-        self.strTargetID = "6f4e0b9b-8cb1-4b1d-a5c4-febd90f22469"
+        self.strTargetID = "6f4e0b9b-8cb1-4b1d-a5c4-febd90f62469"
         
-        self.targeUrl = {
+        self.targetUrl = {
             do{
                 return try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appendingPathComponent(self.fetchType + ".json")
             }catch{

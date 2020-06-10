@@ -1,11 +1,3 @@
-//
-//  HotelDetailViewController.swift
-//  TaipeiTravel
-//
-//  Created by mac25 on 2020/5/20.
-//  Copyright © 2020 hsin. All rights reserved.
-//
-
 import UIKit
 
 class HotelDetailViewController: DetailViewController {
@@ -29,6 +21,9 @@ class HotelDetailViewController: DetailViewController {
         ]
 
         self.title = info["title"] as? String ?? "標題"
+    }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return hasMap ? 4 : 3
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         var height = CGFloat(44.0)

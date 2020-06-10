@@ -1,11 +1,3 @@
-//
-//  ParkMainViewController.swift
-//  TaipeiTravel
-//
-//  Created by mac25 on 2020/5/20.
-//  Copyright © 2020 hsin. All rights reserved.
-//
-
 import UIKit
 
 class ParkMainViewController: BaseMainViewController {
@@ -17,9 +9,9 @@ class ParkMainViewController: BaseMainViewController {
        
        self.fetchType = "park"
        
-       self.strTargetID = "8f6fcb24-290b-4b1d-9d34-72ed1b3f51f0"
+       self.strTargetID = "8f6fcb24-290b-461d-9d34-72ed1b3f51f0"
        
-       self.targeUrl = {
+       self.targetUrl = {
            do{
                return try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appendingPathComponent(self.fetchType + ".json")
            }catch{
@@ -27,6 +19,7 @@ class ParkMainViewController: BaseMainViewController {
            }
        }()
        
+    self.addData()
        // Do any additional setup after loading the view.
    }
    override func goDetail(_ index:Int){
@@ -36,7 +29,7 @@ class ParkMainViewController: BaseMainViewController {
         var area = thisData["Area"] as? String ?? "無面積資訊"
        
         if area != "無面積資訊"{
-            area = "面積: " + area + "平方公尺"
+            area = "面積: " + area + " 平方公尺"
         }
     
         let type = thisData["ParkType"] as? String ?? ""
